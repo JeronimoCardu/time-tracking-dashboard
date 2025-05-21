@@ -46,8 +46,8 @@ body,
   --spacing-400: 32px;
   --spacing-500: 40px;
 
-  --breakpoint-tablet: 769px;
-  --breakpoint-desktop: 1441px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
 }
 
 @layer base {
