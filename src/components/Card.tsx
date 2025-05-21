@@ -36,23 +36,23 @@ export default function Card({ userData, time }: Props) {
   };
   return (
     <div
-      className={`${color(activity)} relative z-10 my-[1.5rem] w-full rounded-[1rem_1rem_2rem_2rem]`}
+      className={`${color(activity)}  relative z-10 h-fit w-full rounded-[1rem_1rem_2rem_2rem] pt-12`}
     >
       <img
-        className="absolute right-5 z-0"
+        className="absolute top-0 right-5 z-0"
         src={`/images/icon-${activity}.svg`}
         alt=""
       />
-      <div className="bg-navy-900 relative z-15 mt-12 space-y-100 rounded-[1rem] p-[1.5rem]">
+      <div className="bg-navy-900 relative z-15 scale-101 space-y-100 rounded-[1rem] p-[1.5rem]">
         <div className="flex items-center justify-between">
           <p className="textPreset5Medium text-white">{userData.title}</p>
           <img src="/images/icon-ellipsis.svg" alt="" />
         </div>
-        <div className="flex items-center justify-between rounded-[1rem]">
-          <h1 className="textPreset3 text-white">
+        <div className="tablet:flex-col tablet:items-start flex items-center justify-between rounded-[1rem]">
+          <h1 className="tablet:text-[3.5rem] tablet:leading-[4.125rem] textPreset3 text-white">
             {userData.timeframes[time].current}hrs
           </h1>
-          <p className="textPreset6 text-white">
+          <p className="textPreset6 text-navy-200">
             {time == "daily"
               ? "Yesterday"
               : time == "weekly"
