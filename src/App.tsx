@@ -4,7 +4,7 @@ import { useState } from "react";
 import Card from "./components/Card";
 
 export default function App() {
-  const [time, setTime] = useState<"daily" | "weekly" | "monthly">("daily");
+  const [time, setTime] = useState<"daily" | "weekly" | "monthly">("monthly");
   return (
     <div className="desktop:m-0 desktop:w-6/10 desktop:flex-row desktop:h-full desktop:space-x-300 mx-8 flex flex-col items-center pt-14">
       <UserReport time={time} setTime={setTime} />
